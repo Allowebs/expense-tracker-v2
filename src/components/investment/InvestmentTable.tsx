@@ -29,7 +29,7 @@ const InvestmentTable = ({ filteredLists }: InvestmentTableProps) => (
             {filteredLists?.map((investment) => (
               <tr key={investment.id}>
                 <td className='px-6 py-4 text-sm text-gray-800 whitespace-nowrap'>{investment.name}</td>
-                <td className='px-6 py-4 text-sm text-gray-800 whitespace-nowrap'>$ {investment.amount} </td>
+                <td className='px-6 py-4 text-sm text-gray-800 whitespace-nowrap'>Rs {investment.amount} </td>
                 <td className='px-6 py-4 text-sm text-gray-800 text-left whitespace-nowrap'>
                   {investment.date.toDateString()}
                 </td>

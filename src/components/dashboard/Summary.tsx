@@ -13,19 +13,19 @@ const Summary = ({ totalIncome, totalExpenses, totalInvestments }: SummaryProps)
     <div className='flex gap-10 flex-wrap'>
       <div className='h-36 w-36 border flex flex-col justify-center items-center shadow-lg'>
         <p className='text-lg'>Total income</p>
-        <p className='text-3xl'>$ {formatNumber(totalIncome)}</p>
+        <p className='text-3xl'>Rs {formatNumber(totalIncome)}</p>
       </div>
       <div className='h-36 w-36 border flex flex-col justify-center items-center shadow-lg'>
         <p className='text-lg'>Total Expenses</p>
-        <p className='text-3xl'>$ {formatNumber(totalExpenses)}</p>
+        <p className='text-3xl'>Rs {formatNumber(totalExpenses)}</p>
       </div>
       <div className='h-36 w-36 border flex flex-col justify-center items-center shadow-lg'>
         <p className='text-lg'>Total Savings</p>
-        <p className='text-3xl'>$ {formatNumber(totalSavings)}</p>
+        <p className='text-3xl'>Rs {formatNumber(totalSavings)}</p>
       </div>
       <div className='h-36 w-36 border flex flex-col justify-center items-center shadow-lg'>
         <p className='text-lg'>Total Investments</p>
-        <p className='text-3xl'>$ {formatNumber(totalInvestments)}</p>
+        <p className='text-3xl'>Rs {formatNumber(totalInvestments)}</p>
       </div>
       <div className='h-36 w-36 border flex flex-col justify-center items-center shadow-lg'>
         <p className='text-lg'>Saving</p>
