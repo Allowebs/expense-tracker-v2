@@ -45,7 +45,7 @@ const AddExpense = () => {
             />
           </div>
           <div className='mb-4'>
-            <label className='block text-gray-700 text-sm mb-2'>Amount (NRs)</label>
+            <label className='block text-gray-700 text-sm mb-2'>Amount </label>
             <input
               className='Input w-full'
               id='amount'
