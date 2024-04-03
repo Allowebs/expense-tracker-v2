@@ -5,7 +5,7 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev",
-    "postinstall": "prisma generate && pnpm run dbinstall",
+    "pre-build": "prisma generate && pnpm run dbinstall",
     "lint": "next lint",
     "start": "next start",
     "dbinstall": "prisma migrate dev",
