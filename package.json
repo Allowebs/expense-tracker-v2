@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "next build",
+    "build": "pnpm prisma generate && next build",
     "dev": "next dev",
     "pre-build": "pnpm prisma generate && pnpm run dbinstall",
     "lint": "next lint",
