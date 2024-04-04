@@ -1,4 +1,4 @@
-import { Expense } from '@/server/db'
+import { Expense } from '@/server/db.js'
 type ExpenseTableProps = { filteredLists: Omit<Expense, 'isRecurring' | 'userId'>[] | undefined }
 
 const ExpenseTable = ({ filteredLists }: ExpenseTableProps) => (

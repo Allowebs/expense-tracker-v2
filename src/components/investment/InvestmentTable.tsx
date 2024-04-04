@@ -1,4 +1,4 @@
-import { Investment } from '@/server/db'
+import { Investment } from '@/server/db.js'
 type InvestmentTableProps = { filteredLists: Omit<Investment, 'userId'>[] | undefined }
 
 const InvestmentTable = ({ filteredLists }: InvestmentTableProps) => (

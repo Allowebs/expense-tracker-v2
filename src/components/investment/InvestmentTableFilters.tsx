@@ -1,4 +1,4 @@
-import { FiltersType } from '@/pages/dashboard/income'
+import { FiltersType } from '@/pages/dashboard/income/index.jsx'
 import { MouseEvent, useRef } from 'react'
 
 type InvestmentTableFiltersProps = {

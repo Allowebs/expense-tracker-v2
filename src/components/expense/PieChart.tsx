@@ -1,4 +1,4 @@
-import { api } from '@/utils/api'
+import { api } from '@/utils/api.js'
 import { Pie } from 'react-chartjs-2'
 
 const PieChart = () => {
@@ -8,7 +8,7 @@ const PieChart = () => {
   }
 
   const curatedData: any = {}
-  expense.map((e) => {
+  expense.map((e: { category: string | number; amount: string }) => {
     if (curatedData[e.category]) {
       curatedData[e.category] += parseInt(e.amount)
     } else {

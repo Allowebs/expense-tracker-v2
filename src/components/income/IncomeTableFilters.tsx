@@ -1,5 +1,5 @@
-import { FiltersType } from '@/pages/dashboard/income'
-import { Recurrance } from '@/server/db'
+import { FiltersType } from '@/pages/dashboard/income/index.jsx'
+import { Recurrance } from '@/server/db.js'
 import { MouseEvent, useRef } from 'react'
 
 type IncomeTableFiltersProps = {

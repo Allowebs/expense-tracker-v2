@@ -1,4 +1,4 @@
-import { Income } from '@/server/db'
+import { Income } from '@/server/db.js'
 type IncomeTableProps = { filteredLists: Omit<Income, 'isRecurring' | 'userId'>[] | undefined }
 
 const IncomeTable = ({ filteredLists }: IncomeTableProps) => (
