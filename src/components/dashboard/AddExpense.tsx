@@ -1,7 +1,7 @@
+import { api } from '@/utils/api'
+import { showFailureNotification, showSuccessNotification } from '@/utils/notify'
 import { Category, Recurrance } from '@prisma/client'
 import { useEffect, useRef, useState } from 'react'
-import { api } from '~/utils/api'
-import { showFailureNotification, showSuccessNotification } from '~/utils/notify'
 
 const AddExpense = () => {
   const [name, setName] = useState('')
@@ -45,7 +45,7 @@ const AddExpense = () => {
             />
           </div>
           <div className='mb-4'>
-            <label className='block text-gray-700 text-sm mb-2'>Amount (NRs)</label>
+            <label className='block text-gray-700 text-sm mb-2'>Amount </label>
             <input
               className='Input w-full'
               id='amount'

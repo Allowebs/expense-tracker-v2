@@ -1,17 +1,17 @@
-import { AppProps, type AppType } from 'next/app'
 import { type Session } from 'next-auth'
 import { SessionProvider } from 'next-auth/react'
+import { AppProps, type AppType } from 'next/app'
 
-import { api } from '~/utils/api'
+import { api } from '@/utils/api'
 
-import '~/styles/globals.css'
+import '@/styles/globals.css'
+import '@/styles/radix.css'
 import 'react-toastify/dist/ReactToastify.css'
-import '~/styles/radix.css'
 
-import { ToastContainer } from 'react-toastify'
-import Sidebar from '~/components/layout/Sidebar'
-import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js'
+import Sidebar from '@/components/layout/Sidebar'
+import { ArcElement, Chart as ChartJS, Legend, Tooltip } from 'chart.js'
 import ChartDataLabels from 'chartjs-plugin-datalabels'
+import { ToastContainer } from 'react-toastify'
 
 import { NextPage } from 'next'
 

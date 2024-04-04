@@ -1,7 +1,7 @@
+import { api } from '@/utils/api'
+import { showFailureNotification, showSuccessNotification } from '@/utils/notify'
 import { Recurrance } from '@prisma/client'
 import { useRef, useState } from 'react'
-import { api } from '~/utils/api'
-import { showFailureNotification, showSuccessNotification } from '~/utils/notify'
 type RoiRecuranceType = Exclude<Recurrance, 'Daily' | 'Weekly'>
 
 const AddInvestment = () => {
@@ -42,7 +42,7 @@ const AddInvestment = () => {
             />
           </div>
           <div className='mb-4'>
-            <label className='block text-gray-700 text-sm mb-2'>Amount (NRs)</label>
+            <label className='block text-gray-700 text-sm mb-2'>Amount </label>
             <input
               className='Input w-full'
               id='amount'

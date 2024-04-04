@@ -1,6 +1,6 @@
-import { Category, Recurrance } from '~/server/db'
-import { FiltersType } from '~/pages/dashboard/expense'
-import { useRef, type MouseEventHandler, MouseEvent } from 'react'
+import { FiltersType } from '@/pages/dashboard/expense'
+import { Category, Recurrance } from '@/server/db'
+import { MouseEvent, useRef } from 'react'
 
 type ExpenseTableFiltersProps = {
   setFilters: React.Dispatch<React.SetStateAction<FiltersType>>
@@ -61,7 +61,7 @@ const ExpenseTableFilters = ({ setFilters }: ExpenseTableFiltersProps) => {
       </div>{' '}
       <div className='my-5 self-end'>
         <button
-          className='px-3 py-2 bg-purple-300 rounded-md cursor-pointer hover:bg-purple-500 hover:text-slate-50 active:bg-purple-700'
+          className='px-3 py-2 bg-white-300 rounded-md cursor-pointer hover:bg-white-500 hover:text-slate-50 active:bg-white-700'
           onClick={handleSubmit}
         >
           Apply

@@ -9,7 +9,8 @@
     "lint": "next lint",
     "start": "next start",
     "dbinstall": "prisma migrate dev",
-    "latest": "ncu --upgrade && pnpm install"
+    "latest": "ncu --upgrade && pnpm install",
+    "format": "prettier . -written"
   },
   "dependencies": {
     "@next-auth/prisma-adapter": "^1.0.5",

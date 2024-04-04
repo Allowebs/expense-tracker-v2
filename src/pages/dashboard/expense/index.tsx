@@ -1,9 +1,9 @@
-import { Category, Recurrance } from '~/server/db'
-import React, { useEffect, useState } from 'react'
-import { api } from '~/utils/api'
-import ExpenseTable from '~/components/expense/ExpenseTable'
-import ExpenseTableFilters from '~/components/expense/ExpenseTableFilters'
-import PieChart from '~/components/expense/PieChart'
+import ExpenseTable from '@/components/expense/ExpenseTable'
+import ExpenseTableFilters from '@/components/expense/ExpenseTableFilters'
+import PieChart from '@/components/expense/PieChart'
+import { Category, Recurrance } from '@/server/db'
+import { api } from '@/utils/api'
+import { useEffect, useState } from 'react'
 
 export type FiltersType = {
   date?: {

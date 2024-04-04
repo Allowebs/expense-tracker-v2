@@ -1,8 +1,8 @@
-import { Recurrance } from '~/server/db'
-import React, { useEffect, useState } from 'react'
-import { api } from '~/utils/api'
-import IncomeTable from '~/components/income/IncomeTable'
-import IncomeTableFilters from '~/components/income/IncomeTableFilters'
+import IncomeTable from '@/components/income/IncomeTable'
+import IncomeTableFilters from '@/components/income/IncomeTableFilters'
+import { Recurrance } from '@/server/db'
+import { api } from '@/utils/api'
+import { useEffect, useState } from 'react'
 
 export type FiltersType = {
   date?: {

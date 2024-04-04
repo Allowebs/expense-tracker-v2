@@ -1,7 +1,7 @@
-import { api } from '~/utils/api'
-import Tabs from '~/components/dashboard/Tabs'
-import Summary from '~/components/dashboard/Summary'
-import DoughnoutChart from '~/components/dashboard/DoughnutChart'
+import DoughnoutChart from '@/components/dashboard/DoughnutChart'
+import Summary from '@/components/dashboard/Summary'
+import Tabs from '@/components/dashboard/Tabs'
+import { api } from '@/utils/api'
 
 const Dashboard = () => {
   const { data: user } = api.user.me.useQuery()

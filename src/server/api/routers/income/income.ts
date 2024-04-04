@@ -1,8 +1,6 @@
-import { z } from 'zod'
-
-import { createTRPCRouter, publicProcedure, protectedProcedure } from '~/server/api/trpc'
-import { ZCreateNewIncomeInputSchema, ZGetAllIncomesInputSchema } from './income.schema'
+import { createTRPCRouter, protectedProcedure } from '@/server/api/trpc'
 import { createNewIncomeHandler, getAllIncomesHandler } from './income.handler'
+import { ZCreateNewIncomeInputSchema, ZGetAllIncomesInputSchema } from './income.schema'
 
 export const incomeRouter = createTRPCRouter({
   create: protectedProcedure.input(ZCreateNewIncomeInputSchema).mutation(createNewIncomeHandler),

@@ -1,4 +1,4 @@
-import { Expense } from '~/server/db'
+import { Expense } from '@/server/db'
 type ExpenseTableProps = { filteredLists: Omit<Expense, 'isRecurring' | 'userId'>[] | undefined }
 
 const ExpenseTable = ({ filteredLists }: ExpenseTableProps) => (
@@ -29,7 +29,7 @@ const ExpenseTable = ({ filteredLists }: ExpenseTableProps) => (
             {filteredLists?.map((expense) => (
               <tr key={expense.id}>
                 <td className='px-6 py-4 text-sm text-gray-800 whitespace-nowrap'>{expense.name}</td>
-                <td className='px-6 py-4 text-sm text-gray-800 whitespace-nowrap'>Rs {expense.amount}</td>
+                <td className='px-6 py-4 text-sm text-gray-800 whitespace-nowrap'> {expense.amount}</td>
                 <td className='px-6 py-4 text-sm text-gray-800 text-left whitespace-nowrap'>
                   {expense.date.toDateString()}
                 </td>

@@ -1,8 +1,8 @@
-import { createTRPCRouter } from '~/server/api/trpc'
-import { userRouter } from './routers/user/'
-import { investmentRouter } from './routers/investment'
+import { createTRPCRouter } from '@/server/api/trpc'
 import { expenseRouter } from './routers/expense'
 import { incomeRouter } from './routers/income'
+import { investmentRouter } from './routers/investment'
+import { userRouter } from './routers/user/'
 /**
  * This is the primary router for your server.
  *

@@ -1,10 +1,10 @@
-import { type GetServerSidePropsContext } from 'next'
-import { getServerSession, type NextAuthOptions, type DefaultSession } from 'next-auth'
-import CredentialsProvider from 'next-auth/providers/credentials'
+import { env } from '@/env.mjs'
+import { prisma } from '@/server/db'
 import { PrismaAdapter } from '@next-auth/prisma-adapter'
-import { prisma } from '~/server/db'
 import bcrypt from 'bcryptjs'
-import { env } from '~/env.mjs'
+import { type GetServerSidePropsContext } from 'next'
+import { getServerSession, type DefaultSession, type NextAuthOptions } from 'next-auth'
+import CredentialsProvider from 'next-auth/providers/credentials'
 /**
  * Module augmentation for `next-auth` types. Allows us to add custom properties to the `session`
  * object and keep type safety.

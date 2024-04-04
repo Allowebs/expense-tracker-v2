@@ -1,7 +1,7 @@
+import { Recurrance } from '@/server/db'
+import { api } from '@/utils/api'
+import { showFailureNotification, showSuccessNotification } from '@/utils/notify'
 import { useEffect, useRef, useState } from 'react'
-import { Recurrance } from '~/server/db'
-import { api } from '~/utils/api'
-import { showFailureNotification, showSuccessNotification } from '~/utils/notify'
 
 const AddIncome = () => {
   const [name, setName] = useState('')
@@ -45,7 +45,7 @@ const AddIncome = () => {
             />
           </div>
           <div className='mb-4'>
-            <label className='block text-gray-700 text-sm mb-2'>Amount (NRs)</label>
+            <label className='block text-gray-700 text-sm mb-2'>Amount </label>
             <input
               className='Input w-full'
               id='amount'

@@ -1,5 +1,5 @@
+import { api } from '@/utils/api'
 import { Pie } from 'react-chartjs-2'
-import { api } from '~/utils/api'
 
 const PieChart = () => {
   const { data: expense } = api.expense.getAll.useQuery()

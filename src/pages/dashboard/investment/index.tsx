@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react'
-import { api } from '~/utils/api'
-import InvestmentTable from '~/components/investment/InvestmentTable'
-import InvestmentTableFilters from '~/components/investment/InvestmentTableFilters'
+import InvestmentTable from '@/components/investment/InvestmentTable'
+import InvestmentTableFilters from '@/components/investment/InvestmentTableFilters'
+import { api } from '@/utils/api'
+import { useEffect, useState } from 'react'
 
 export type FiltersType = {
   date?: {

@@ -1,5 +1,5 @@
-import { Recurrance } from '~/server/db'
-import { FiltersType } from '~/pages/dashboard/income'
+import { FiltersType } from '@/pages/dashboard/income'
+import { Recurrance } from '@/server/db'
 import { MouseEvent, useRef } from 'react'
 
 type IncomeTableFiltersProps = {
@@ -48,7 +48,7 @@ const IncomeTableFilters = ({ setFilters }: IncomeTableFiltersProps) => {
       </div>{' '}
       <div className='my-5 self-end'>
         <button
-          className='px-3 py-2 bg-purple-300 rounded-md cursor-pointer hover:bg-purple-500 hover:text-slate-50 active:bg-purple-700'
+          className='px-3 py-2 bg-white-300 rounded-md cursor-pointer hover:bg-white-500 hover:text-slate-50 active:bg-white-700'
           onClick={handleSubmit}
         >
           Apply
