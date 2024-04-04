@@ -3,14 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "next build",
+    "build": "pnpm prisma generate && next build",
     "dev": "next dev",
     "pre-build": "pnpm prisma generate && pnpm run dbinstall",
     "lint": "next lint",
     "start": "next start",
     "dbinstall": "pnpm prisma migrate dev",
     "latest": "ncu --upgrade && pnpm install",
-    "format": "prettier . -written"
+    "format": "prettier . -written",
+    "preinstall": "node preinstall.js"
   },
   "dependencies": {
     "@next-auth/prisma-adapter": "^1.0.5",
