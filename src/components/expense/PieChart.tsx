@@ -1,4 +1,4 @@
-import { api } from '@/utils/api.js'
+import { api } from '@/utils/api'
 import { Pie } from 'react-chartjs-2'
 
 const PieChart = () => {
